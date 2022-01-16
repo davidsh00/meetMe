@@ -1,0 +1,176 @@
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+:root {
+  font-size: 14px;
+  color: #666666;
+  overflow-x: none;
+}
+a {
+  text-decoration: none;
+}
+.section-striped {
+  section {
+    margin-bottom: 2rem;
+    &:not(:nth-child(odd)) {
+      background-color: #f0f0f0;
+    }
+  }
+}
+.main-david {
+  nav {
+    .active {
+      color: var(--bs-info) !important;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+  .main__ {
+    &header {
+      background: url("./assets/img/hero-area.jpg");
+      background-size: cover;
+    }
+    &person-about {
+      .profile-img {
+        @media (min-width: 768px) {
+          box-shadow: 0 0.5rem 5rem rgb(0 0 0 / 18%) !important;
+        }
+      }
+      table {
+        td:last-child {
+          padding-left: 1.5rem;
+        }
+      }
+    }
+    &whatdo {
+      .card {
+        transition: all 0.5s;
+        &:hover {
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+        }
+        .card-body {
+          color: #666666;
+        }
+        .card-link {
+          transition: all 0.5s;
+          color: inherit;
+          font-size: inherit;
+          @media (min-width: 768px) {
+            font-size: 1.14286rem;
+          }
+          @media (min-width: 992px) {
+            font-size: inherit;
+          }
+          @media (min-width) {
+            font-size: 1.14286rem;
+          }
+          &:hover {
+            color: var(--bs-info);
+          }
+        }
+      }
+    }
+    &road-map {
+      .map {
+        // min-width: 510px;
+        &-icon {
+          left: -1.75rem;
+          top: -0.75rem;
+          @media (min-width: 576px) {
+            position: absolute;
+          }
+        }
+        &-list > li::before {
+          content: "";
+
+          border-radius: 50%;
+          background-color: white;
+          border: 2px solid var(--bs-info);
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          left: -1.43rem;
+          top: 50%;
+        }
+
+        .card {
+          background-color: #f2f2f2;
+          color: #666666;
+          .card-title {
+          }
+          .card-subtitle {
+            font-size: 12px;
+          }
+          .card-text {
+            color: #888888;
+          }
+        }
+      }
+    }
+    &remark {
+      transition: all 1s;
+      .works-gallery {
+        .btn-check:checked + .btn {
+          color: white !important;
+        }
+        .card-img-overlay {
+          transition: all 1s;
+          opacity: 0;
+          visibility: hidden;
+          & > div {
+            @media (max-width: 1200px) {
+              width: 50% !important;
+            }
+            @media (max-width: 576px) {
+              width: 25% !important;
+            }
+          }
+        }
+        .card:hover > .card-img-overlay {
+          opacity: 1;
+          visibility: visible;
+          background-color: rgba(var(--bs-info-rgb), 0.5);
+        }
+      }
+      .works-project {
+        background: url(./assets/img/bg-1.jpg);
+        background-size: cover;
+        background-position-x: center;
+      }
+    }
+  }
+
+  .social-link {
+    li {
+      padding: 0.5rem;
+    }
+    a {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: var(--bs-danger);
+      color: white;
+    }
+    .bg-social {
+      &-primery {
+        &:hover,
+        &:focus {
+          background-color: var(--bs-primary) !important;
+        }
+      }
+      &-info {
+        &:hover,
+        &:focus {
+          background-color: var(--bs-info) !important;
+        }
+      }
+    }
+  }
+}

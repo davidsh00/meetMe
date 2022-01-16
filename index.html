@@ -1,0 +1,813 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Test</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- project styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navPagesLinks"
+    data-bs-offset="0"
+    class="scrollspy-example"
+    tabindex="0"
+  >
+    <!-- start project -->
+    <div class="main-david section-striped">
+      <!-- navbar -->
+
+      <nav
+        class="navbar navbar-expand-md justify-content-between navbar-light bg-light sticky-top shadow-sm"
+      >
+        <div class="container">
+          <div class="navbar-brand p-md-2 text-info d-flex align-items-center">
+            <i class="fas fa-user-circle me-2 h1"></i>
+            <div class="brand-name h2">Meet<span class="fw-bold">Me</span></div>
+          </div>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navPagesLinks"
+            aria-label="navbar Toggle"
+            aria-expanded="false"
+            aria-controls="#navPagesLinks"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navPagesLinks">
+            <ul class="navbar-nav fw-bold text-primary">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#resume" class="nav-link">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a href="#work" class="nav-link">Work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              `
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--main header backgroind-->
+      <section class="main__header" id="home">
+        <!--main header backgroind overley-->
+        <div class="overlay py-md-5 bg-black bg-opacity-75">
+          <!-- main header contetn -->
+          <div class="container text-center px-1 py-4 py-sm-5 text-white">
+            <div class="header__title">
+              <p class="h1">Hi This is</p>
+              <p class="h1">Tom saulnier</p>
+              <p>Front-end web Developer and Graphic designer</p>
+            </div>
+            <ul
+              class="social-link d-inline-flex text-black list-unstyled flex-wrap justify-content-center"
+            >
+              <li>
+                <a href="#" class="btn bg-social-primery"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="btn bg-social-info"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="btn"><i class="fas fa-hashtag"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btn"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btn"><i class="fab fa-google"></i></a>
+              </li>
+            </ul>
+            <div class="w-100"></div>
+            <div class="btn btn-info p-3 text-white">Get a free quote</div>
+          </div>
+        </div>
+      </section>
+
+      <!--main person-about-->
+
+      <section class="main__person-about" id="about">
+        <div class="container">
+          <div class="row flex-column flex-md-row align-items-start">
+            <div class="person__profile col text-center">
+              <img
+                src="./assets/img/about-1.jpg"
+                class="profile-img img-thumbnail p-2 shadow w-100 h-100"
+                style="max-width: 510px"
+              />
+            </div>
+
+            <div class="person__details col">
+              <h2 class="details__title">Hi Guys!</h2>
+              <p class="details__content">
+                Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et
+                rutrum eleifend sollicitudin lacinia justo id turpis. Nec
+                convallis integer. Odio eget duis. Nulla aenean et. Blandit
+                varius sollicitudin. Pellentesque leo primis neque urna magnis.
+                Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis
+                et parturient duis est eleifend sociis rutrum odio viverra
+                integer.
+              </p>
+              <table
+                class="person-describe table-sm table-borderless w-auto fs-6"
+              >
+                <tbody>
+                  <tr>
+                    <th>Name</th>
+                    <td>:</td>
+                    <td>Tom Saulnier</td>
+                  </tr>
+                  <tr>
+                    <th>Age</th>
+                    <td>:</td>
+                    <td>4 Years</td>
+                  </tr>
+                  <tr>
+                    <th>Country</th>
+                    <td>:</td>
+                    <td>USA</td>
+                  </tr>
+                  <tr>
+                    <th>Location</th>
+                    <td>:</td>
+                    <td>San Francisco, CA</td>
+                  </tr>
+                  <tr>
+                    <th>e-mail</th>
+                    <td>:</td>
+                    <td>email@example.com</td>
+                  </tr>
+                  <tr>
+                    <th>Phone</th>
+                    <td>:</td>
+                    <td>+ (00) 123 456 789</td>
+                  </tr>
+                  <tr>
+                    <th>Freelance</th>
+                    <td>:</td>
+                    <td>S Available</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                class="detail_btns d-flex flex-wrap w-100 align-items-center gap-2"
+              >
+                <button
+                  class="btn btn-info text-uppercase text-white p-2 px-4 text-truncate"
+                >
+                  <li class="fas fa-paperclip d-lg-inline-block d-md-none"></li>
+                  download resume
+                </button>
+                <button
+                  class="btn btn-danger text-uppercase text-white p-2 px-4 text-truncate"
+                >
+                  <li class="fa fa-envelope d-lg-inline-block d-md-none"></li>
+                  contact me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main what do section -->
+      <section class="main__whatdo p-5" id="services">
+        <div class="container text-center">
+          <h2 class="whatdo__title h1 p-3">what i do</h2>
+          <ul
+            class="whatdo__cards-list row m-0 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-around gy-3 p-0"
+          >
+            <div class="card-container">
+              <li class="card col flex-column pt-lg-2 pb-lg-5 shadow-sm">
+                <div class="card-body px-lg-0">
+                  <i
+                    class="card-img fab fa-windows py-4 display-1 text-info"
+                  ></i>
+                  <h6 class="card-title text-uppercase fw-bold">
+                    <a href="#" class="card-link">Front-end development</a>
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse condi.
+                  </p>
+                </div>
+              </li>
+            </div>
+            <div class="card-container">
+              <li class="card col flex-column pt-lg-2 pb-lg-5 shadow-sm">
+                <div class="card-body px-lg-0">
+                  <i
+                    class="card-img fab fa-windows py-4 display-1 text-info"
+                  ></i>
+                  <h6 class="card-title text-uppercase fw-bold">
+                    <a href="#" class="card-link">Front-end development</a>
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse condi.
+                  </p>
+                </div>
+              </li>
+            </div>
+            <div class="card-container">
+              <li class="card col flex-column pt-lg-2 pb-lg-5 shadow-sm">
+                <div class="card-body px-lg-0">
+                  <i
+                    class="card-img fab fa-windows py-4 display-1 text-info"
+                  ></i>
+                  <h6 class="card-title text-uppercase fw-bold">
+                    <a href="#" class="card-link">Front-end development</a>
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse condi.
+                  </p>
+                </div>
+              </li>
+            </div>
+            <div class="card-container">
+              <li class="card col flex-column pt-lg-2 pb-lg-5 shadow-sm">
+                <div class="card-body px-lg-0">
+                  <i
+                    class="card-img fab fa-windows py-4 display-1 text-info"
+                  ></i>
+                  <h6 class="card-title text-uppercase fw-bold">
+                    <a href="#" class="card-link">Front-end development</a>
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse condi.
+                  </p>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <!-- main roadmap -->
+      <section class="main__road-map" id="resume">
+        <div class="container">
+          <div class="row">
+            <!-- map split -->
+            <div class="col-12 col-sm-6 mb-3">
+              <!-- map logo title list -->
+
+              <div class="map border-start border-4 px-2 position-relative">
+                <div class="map-header d-flex align-items-center mb-3">
+                  <div
+                    class="map-icon p-2 p-sm-3 border rounded-circle bg-info text-white justify-content-center d-inline-flex align-items-center"
+                  >
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="h4 offset-sm-1 mb-0">EDUCATION</div>
+                </div>
+
+                <!-- maps list card -->
+                <ul class="map-list list-unstyled ps-2">
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <div class="map border-start border-4 px-2 position-relative">
+                <div class="map-header d-flex align-items-center mb-3">
+                  <div
+                    class="map-icon p-2 p-sm-3 border rounded-circle bg-info text-white justify-content-center d-inline-flex align-items-center"
+                  >
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="h4 offset-sm-1 mb-0">EXPEREINCE</div>
+                </div>
+
+                <!-- maps list card -->
+                <ul class="map-list list-unstyled ps-2">
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="position-relative py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title fw-bold">
+                          Bsc In CSE - Yale University
+                        </div>
+                        <div class="card-subtitle">2012 - 2016</div>
+                        <p class="card-text">
+                          Expenses as material breeding insisted building to in.
+                          Continual so distrusts pronounce by unwilling
+                          listening. Thing do taste on we manor.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main remarkable works -->
+      <section class="main__remark" id="work">
+        <div class="works-gallery mb-4">
+          <div class="container text-center px-0 px-sm-2 py-5">
+            <h2 class="h2 mb-4">My Remarkable Works</h2>
+            <div class="mb-4">
+              <input
+                type="radio"
+                class="btn-check"
+                id="remarkAll"
+                name="remark-select"
+                checked
+                autocomplete="false"
+              />
+              <label class="btn btn-outline-info px-4 py-2 me-2" for="remarkAll"
+                >All</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                id="remarkDesign"
+                name="remark-select"
+                autocomplete="false"
+              />
+              <label
+                class="btn btn-outline-info px-4 py-2 me-2"
+                for="remarkDesign"
+                >Design</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                id="remarkDev"
+                name="remark-select"
+                autocomplete="false"
+              />
+              <label class="btn btn-outline-info px-4 py-2 me-2" for="remarkDev"
+                >Development</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                id="remarkPrint"
+                name="remark-select"
+                autocomplete="false"
+              />
+              <label
+                class="btn btn-outline-info px-4 py-2 me-2"
+                for="remarkPrint"
+                >Print</label
+              >
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="">
+                <div class="card p-0 border-0 text-white">
+                  <img class="card-img" src="./assets/img/img-1.jpg" alt="" />
+                  <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center"
+                  >
+                    <div class="w-25 d-inline-flex justify-content-between">
+                      <a
+                        href="./assets/img/img-1.jpg"
+                        class="bg-white text-info h4 p-2 rounded-2 fas fa-eye"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                      ></a>
+                      <a
+                        href="#"
+                        class="bg-white text-info p-2 rounded-2 h4 fas fa-link"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card p-0 border-0 text-white">
+                  <img class="card-img" src="./assets/img/img-2.jpg" alt="" />
+                  <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center"
+                  >
+                    <div class="w-25 d-inline-flex justify-content-between">
+                      <a
+                        href="./assets/img/img-2.jpg"
+                        class="bg-white text-info h4 p-2 rounded-2 fas fa-eye"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                      ></a>
+                      <a
+                        href="#"
+                        class="bg-white text-info p-2 rounded-2 h4 fas fa-link"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card p-0 border-0 text-white">
+                  <img class="card-img" src="./assets/img/img-3.jpg" alt="" />
+                  <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center"
+                  >
+                    <div class="w-25 d-inline-flex justify-content-between">
+                      <a
+                        href="./assets/img/img-3.jpg"
+                        class="bg-white text-info h4 p-2 rounded-2 fas fa-eye"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                      ></a>
+                      <a
+                        href="#"
+                        class="bg-white text-info p-2 rounded-2 h4 fas fa-link"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card p-0 border-0 text-white">
+                  <img class="card-img" src="./assets/img/img-4.jpg" alt="" />
+                  <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center"
+                  >
+                    <div class="w-25 d-inline-flex justify-content-between">
+                      <a
+                        href="./assets/img/img-4.jpg"
+                        class="bg-white text-info h4 p-2 rounded-2 fas fa-eye"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                      ></a>
+                      <a
+                        href="#"
+                        class="bg-white text-info p-2 rounded-2 h4 fas fa-link"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card p-0 border-0 text-white">
+                  <img class="card-img" src="./assets/img/img-5.jpg" alt="" />
+                  <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center"
+                  >
+                    <div class="w-25 d-inline-flex justify-content-between">
+                      <a
+                        href="./assets/img/img-5.jpg"
+                        class="bg-white text-info h4 p-2 rounded-2 fas fa-eye"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                      ></a>
+                      <a
+                        href="#"
+                        class="bg-white text-info p-2 rounded-2 h4 fas fa-link"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card p-0 border-0 text-white">
+                  <img class="card-img" src="./assets/img/img-6.jpg" alt="" />
+                  <div
+                    class="card-img-overlay d-flex align-items-center justify-content-center"
+                  >
+                    <div class="w-25 d-inline-flex justify-content-between">
+                      <a
+                        href="./assets/img/img-6.jpg"
+                        class="bg-white text-info h4 p-2 rounded-2 fas fa-eye"
+                        data-bs-toggle="modal"
+                        data-bs-target="#galleryModal"
+                      ></a>
+                      <a
+                        href="#"
+                        class="bg-white text-info p-2 rounded-2 h4 fas fa-link"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal fade"
+                id="galleryModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered w-50 m-auto">
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <img
+                        class="w-100"
+                        id="galleryModalImg"
+                        src="assets/img/img-1.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="works-project">
+          <!-- background overlay -->
+          <div class="bg-black bg-opacity-25">
+            <div class="container py-5">
+              <div
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center gy-5 py-5"
+              >
+                <div class="card bg-transparent border-0 text-center">
+                  <div class="card-img-top display-1 text-info">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="card-body text-white">
+                    <h3 class="card-title h1 mb-3">250</h3>
+                    <div class="card-text text-uppercase">project working</div>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 text-center">
+                  <div class="card-img-top display-1 text-info">
+                    <i class="far fa-check-circle"></i>
+                  </div>
+                  <div class="card-body text-white">
+                    <h3 class="card-title h1 mb-3">950</h3>
+                    <div class="card-text text-uppercase">project DONE</div>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 text-center">
+                  <div class="card-img-top display-1 text-info">
+                    <i class="far fa-gem"></i>
+                  </div>
+                  <div class="card-body text-white">
+                    <h3 class="card-title h1 mb-3">150</h3>
+                    <div class="card-text text-uppercase">AWARDS RECEIVED</div>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 text-center">
+                  <div class="card-img-top display-1 text-info fw-normal">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="card-body text-white">
+                    <h3 class="card-title h1 mb-3">299</h3>
+                    <div class="card-text text-uppercase">HAPPY CLIENTS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main contact us -->
+      <section class="main__contact" id="contact">
+        <div class="container">
+          <div class="row shadow-lg p-5">
+            <form class="contact-form mb-4 col-md-6">
+              <div class="mb-3"><h4 class="">CONTACT FORM</h4></div>
+              <div class="row row-cols-1 row-cols-md-2 mb-3">
+                <div class="mb-3 mb-md-0">
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="email"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" placeholder="Subject" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  placeholder="Your Message"
+                  rows="3"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button class="btn btn-info text-white py-2 px-4" type="submit">
+                SEND MESSAGE
+              </button>
+            </form>
+            <div class="contact-address col-md-6">
+              <div class="mb-3"><h4>CONTACT ADDRESS</h4></div>
+
+              <div class="border p-2 px-4">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="icon text-white bg-info p-3 h4 rounded-circle">
+                    <li class="fas fa-map-marker-alt"></li>
+                  </div>
+                  <div class="text ms-3">
+                    <p class="mb-0">San Francisco, CA</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="icon text-white bg-info p-3 h4 rounded-circle">
+                    <li class="fas fa-envelope"></li>
+                  </div>
+                  <div class="text ms-3">
+                    <p class="mb-0">hello@tom.com</p>
+                    <p class="mb-0">tomsaulnier@gmail.com</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="icon text-white bg-info p-3 h4 rounded-circle">
+                    <li class="fas fa-phone-alt"></li>
+                  </div>
+                  <div class="text ms-3">
+                    <p class="mb-0">+ (00) 123 456 789</p>
+                    <p class="mb-0">+ (00) 123 344 789</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-map col-12"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main footer -->
+      <section class="main__footer mb-0">
+        <footer class="container-fluid bg-black text-white text-center p-5">
+          <ul
+            class="social-link d-inline-flex text-black list-unstyled flex-wrap justify-content-center"
+          >
+            <li>
+              <a href="#" class="btn bg-social-primery"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="btn bg-social-info"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="btn"><i class="fas fa-hashtag"></i></a>
+            </li>
+            <li>
+              <a href="#" class="btn"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#" class="btn"><i class="fab fa-google"></i></a>
+            </li>
+          </ul>
+          <p class="p-3 mb-0">Copyright © 2018 UIdeck All Right Reserved</p>
+        </footer>
+      </section>
+    </div>
+    <!-- End project -->
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- project scripts -->
+    <script>
+      const imgTag = document.getElementById("galleryModalImg");
+      const modalChange = document.querySelectorAll(".card-img-overly,.fa-eye");
+      modalChange.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          imgTag.src = e.target.getAttribute("href");
+        });
+      });
+    </script>
+  </body>
+</html>
